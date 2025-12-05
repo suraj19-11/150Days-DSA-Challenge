@@ -5,5 +5,5 @@ Solving DSA daily for 150 days using Java.
 
 | Day | Problems |
 |-----|----------|
-| 1   | 3        |
+| 1   | 4        |
 |     |          |
