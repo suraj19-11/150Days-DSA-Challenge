@@ -13,3 +13,5 @@ public class SubString {
         System.out.println(str.substring(2,7));
     }
 }
+
+
