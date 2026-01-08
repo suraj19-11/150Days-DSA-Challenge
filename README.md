@@ -7,3 +7,4 @@ Solving DSA daily for 150 days using Java.
 |-----|----------|
 | 1   | 7        |
 | 2   | 8        |
+| 3   | 3        |
