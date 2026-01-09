@@ -50,6 +50,38 @@ public class ithBit {
         return n & bitmask;
         
     }
+
+    //Given number is Power of 2 or not
+    public static boolean PowerOf2(int n){
+        return (n&(n-1))==0;
+    }
+
+    //Count Set Bits in a number
+    public static int countSetBits(int n){
+        int count = 0;
+        while (n>0){
+            if((n&1)!=0){
+                count++;
+            }
+           n =  n>>1;
+        }
+        return count;
+    }
+
+    //Fast Exponentation
+    public static int FastExpo(int a, int n){
+        int ans = 1;
+
+        while(n>0){
+            if((n & 1) != 0){
+                ans = ans * a;
+            }
+            a = a * a;
+            n = n>>1;
+        }
+        return ans;
+
+    }
     public static void main(String[] args) {
         System.out.println(ithbit(6, 2));
         System.out.println(setIthBit(1, 2));
@@ -57,6 +89,10 @@ public class ithBit {
         System.out.println(updateIthBit(11, 2, 1));
         System.out.println(ClrLstIBits(10, 2));
         System.out.println(ClrRange(2515, 2, 7));
+        System.out.println(PowerOf2(8));
+        System.out.println(countSetBits(10));
+        System.out.println(FastExpo(3,5));
+
         
     }
 }
