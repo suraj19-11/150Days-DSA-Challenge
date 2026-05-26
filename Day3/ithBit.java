@@ -1,4 +1,4 @@
-public class ithBit {
+public class IthBit {
     public static int ithbit(int n, int i){
         int Bitmask = 1<<i;
         if((n & Bitmask )== 0){
@@ -42,7 +42,7 @@ public class ithBit {
         int bitmark = (~0)<<i;
         return n&bitmark;
     }
-    //Clear Range Of Bits
+    //Clear the Range Of Bits from i to j
     public static int ClrRange(int n,int i, int j){
         int a = (~0)<<(j+1);
         int b = (1<<i)-1;
@@ -83,12 +83,12 @@ public class ithBit {
 
     }
     public static void main(String[] args) {
-        System.out.println(ithbit(6, 2));
-        System.out.println(setIthBit(1, 2));
-        System.out.println(clearIthBit(10, 3));
-        System.out.println(updateIthBit(11, 2, 1));
-        System.out.println(ClrLstIBits(10, 2));
-        System.out.println(ClrRange(2515, 2, 7));
+        System.out.println("ith bit"+ithbit(6, 2));
+        System.out.println("Set ith Bit"+setIthBit(1, 2));
+        System.out.println("Clear bit at ith position "+ clearIthBit(10, 3));
+        System.out.println("Update bit at ith position " + updateIthBit(11, 2, 1));
+        System.out.println("Clear last bit " +ClrLstIBits(10, 2));
+        System.out.println("Clear bit from i to j range " +ClrRange(2515, 2, 7));
         System.out.println(PowerOf2(8));
         System.out.println(countSetBits(10));
         System.out.println(FastExpo(3,5));
